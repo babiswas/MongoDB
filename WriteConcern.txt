@@ -1,0 +1,6 @@
+Write Concern
+
+db.hobby.insertOne({name:"Hello",age:32},{writeconcern:{w:1,j:true,wtimeout:200}})
+#W correspond to acknowlegement
+#J correspond to Journal
+#wtimeout correspond to timeout
