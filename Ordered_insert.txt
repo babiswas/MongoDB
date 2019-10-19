@@ -1,0 +1,30 @@
+Custom id can be associated with documents
+
+use hobbies
+
+db.hobby.insertMany([
+{
+"name":"football",
+_id:"football"
+},
+{
+"name":"Volleyball",
+_id:"volley"
+},
+{
+"name":"Cricket",
+_id:"cricket"
+}])
+
+db.hobby.insertMany([
+{
+"name":"football",
+-id:"football"
+},
+{
+"name":"basketball",
+-id:"basket"
+}
+],{ordered:false}
+)
+
