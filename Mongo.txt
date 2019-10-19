@@ -1,0 +1,30 @@
+Working with Shell Server:
+1.As a process.
+2.As a service.
+3.Configuring DB path and --logpath
+4.Fixing issues.
+
+Setting the DB path and LogPath.
+
+#To start the server
+mongod
+mongod --port xxxxx
+#To change the default port.
+
+--logpath args
+--dbpath  args
+
+Exploring Mongodb options:
+
+Storage Engine in Mongo is WiredTiger
+
+use admin
+db.shutdownServer()
+
+
+
+
+
+
+
+
