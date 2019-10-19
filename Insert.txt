@@ -1,0 +1,74 @@
+use Contact
+
+#Insert Single Object.
+db.person.insertOne(
+{
+  "name":"Bapan",
+  "age":23,
+  "hobbies":[
+   "Volley Ball",
+   "Basket Ball"
+  ]
+})
+db.person.find().pretty()
+
+#Insert Bulk operations.
+db.person.insertMany([
+{
+  "name":"Bapan",
+  "age":23,
+  "hobbies":[
+   "Volley Ball",
+   "Basket Ball"
+  ]
+},
+{
+  "name":"Gapan",
+  "age":23,
+  "hobbies":[
+   "Volley Ball",
+   "Basket Ball"
+  ]
+},
+{
+  "name":"Papan",
+  "age":23,
+  "hobbies":[
+   "Volley Ball",
+   "Basket Ball"
+  ]
+}
+])
+
+
+#Insert method
+db.person.insert({
+"name":"Tapan",
+"age":21,
+"hobbies":[
+ "hockey",
+ "football"]
+})
+
+
+#Bulk Insert.
+db.person.insert([
+{
+  "name":"Bapan",
+  "age":26,
+  "hobbies":[
+   "Cricket","Hockey"]
+},
+{
+  "name":"Bapan",
+  "age":26,
+  "hobbies":[
+   "Cricket","Hockey"]
+},
+{
+  "name":"Bapan",
+  "age":26,
+  "hobbies":[
+   "Cricket","Hockey"]
+}
+])
