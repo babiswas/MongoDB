@@ -1,0 +1,41 @@
+CRUD in MongoDB
+1.Create 2.Retrieve 3.Update 4.Delete
+
+Create
+insertOne()
+insertMany()
+
+Retrieve
+find()
+findOne()
+
+Update
+updateOne()
+updateMany()
+
+Delete
+deleteOne()
+
+use person
+db.user.insertOne({
+name:"Bapan",
+age:23,
+})
+
+db.user.insertMany([
+{
+name:"Bapan",
+age:23
+},
+{
+name:"Tapan",
+age:24
+}])
+
+db.user.find().pretty()
+db.user.drop()
+db.user.updateOne({},{$set:{"occupation":"Engineeer"}})
+
+
+
+
