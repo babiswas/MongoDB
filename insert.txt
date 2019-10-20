@@ -35,6 +35,28 @@ age:24
 db.user.find().pretty()
 db.user.drop()
 db.user.updateOne({},{$set:{"occupation":"Engineeer"}})
+db.user.deleteMany({})
+
+This will delete all the data in the collection.
+
+Understanding InsertMany:
+------------------------
+1.Database
+2.Collections
+3.key value pairs
+
+mongod
+mongo
+show dbs
+json bson
+schema independent
+
+db.collection.find()
+db.collection.findOne()
+
+MongoDB store binary data.
+
+
 
 
 
