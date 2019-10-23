@@ -1,0 +1,13 @@
+find() gives us a cursor object.
+
+db.person.updateMany({},{$set:{"family":["mother","father"]}})
+
+#This is called projection.
+
+db.person.find({},{name:1,dgntn:1,_id:0})
+db.person.find({"children.mother":"M"})
+
+
+
+
+
