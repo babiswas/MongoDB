@@ -1,0 +1,16 @@
+Update in MongoDB:
+------------------
+updateOne()
+updateMany()
+
+updateMany()
+db.person.updateMany({},{$set:{"name":"Jiban"}})
+db.person.find().pretty()
+db.person.updateMany({},{$push:{hobbies :{$each:["hello,"bello"]}}})
+db.person.find().pretty()
+db.person.updateMany({},{$push:{hobbies:[{"test1":"100"},{"test2":200}]}})
+db.person.find().pretty()
+db.person.updateMany({},{$push:{hobbies:[{"test1":"test2"},{"test3":"test4"}]}})
+db.person.updateMany({},{$set:{name:"Tapan",age:36}})
+
+
