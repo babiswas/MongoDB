@@ -1,0 +1,3 @@
+db.person.updateMany({},{$unset:{age:null}})
+db.person.updateMany({},{$rename:{age:"TotalAge"}})
+db.person.updateOne({"name":"Maria"},{$set:{"age":32,"TotalAge":34,"TotalExperience":10}},{upsert:true})
