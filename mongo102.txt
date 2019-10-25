@@ -1,0 +1,9 @@
+db.person.find({"TotalExperience":{$eq:11}}).pretty()
+db.person.find({"TotalExperience":{$ne:20}}).pretty()
+db.person.find({"TotalExperience":{$lt:40}}).pretty()
+db.person.find({"TotalExperience":{$in:[21,24]}}).pretty()
+db.person.find({brr:{$in:[7,8,9]}})
+db.person.find({$or:[{rating:{$gt:5}},{rating:{$lt:3}},{name:{$eq:"Tapan"}}]})
+
+
+
